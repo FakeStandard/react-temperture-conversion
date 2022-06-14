@@ -1,6 +1,7 @@
 import React from "react";
 import { BoilingVerdict } from "./BoilingVerdict";
 import { TempertureInput } from "./TempertureInput";
+import './Calculator.css';
 
 export interface ICalculatorProps {
 }
@@ -55,16 +56,18 @@ export class Calculator extends React.Component<ICalculatorProps, ICalculatorSta
         const fahrenheit = scale === 'c' ? tryConvert(temperture, toFahrenheit) : temperture
 
         return (
-            <div>
-                <TempertureInput
-                    scale="c"
-                    temperture={celsius}
-                    onTempertureChange={this.handleCelsiusChange} />
-                <TempertureInput
-                    scale="f"
-                    temperture={fahrenheit}
-                    onTempertureChange={this.handleFahrenheitChange} />
-                <BoilingVerdict celsius={parseFloat(celsius)} />
+            <div className="Calculator">
+                <div>
+                    <TempertureInput
+                        scale="c"
+                        temperture={celsius}
+                        onTempertureChange={this.handleCelsiusChange} />
+                    <TempertureInput
+                        scale="f"
+                        temperture={fahrenheit}
+                        onTempertureChange={this.handleFahrenheitChange} />
+                    <BoilingVerdict celsius={parseFloat(celsius)} />
+                </div>
             </div>
         )
     }
