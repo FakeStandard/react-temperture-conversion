@@ -42,6 +42,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://gitname.github.io/react-temperture-conversion"
+  "homepage": "https://gitname.github.io/react-temperture-conversion",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
-

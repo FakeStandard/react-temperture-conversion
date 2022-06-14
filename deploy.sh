@@ -30,7 +30,7 @@
 # https://github.com/gitname/react-gh-pages
 
 # 2022/6/6
-# npm run build
-npm run gh-pages -d build
+npm run build
+# npm run gh-pages -d build
 
 npm run deploy
